@@ -11,7 +11,7 @@ recognizer = cv2.face.LBPHFaceRecognizer_create()  # Sửa tên hàm thành LBPH
 face_detector = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 def get_images(path):
-    # Lấy danh sách tất cả các hình ảnh trong thư mục
+    
     image_paths = [os.path.join(path, f) for f in os.listdir(path)]
     face_samples = []
     ids = []
